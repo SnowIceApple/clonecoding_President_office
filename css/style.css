@@ -1,0 +1,57 @@
+
+body{
+    font-family: 'Pretendard', sans-serif;
+    overflow-x: hidden;
+}
+
+#wrap{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+:root{
+    --color1-: #011131;
+    --color2-: #00205c;
+    --color3-: #AF8E65;
+    --colorTxt1-: #222;
+    --colorTxt2-: #777
+}
+
+/* header */
+
+#header{
+    width: 100%;
+    background-color: var(--color1-);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+section:not(.main){
+    margin-top: 90px;
+}
+
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo a{
+    display: inline-block;
+}
+
+.logo a img{
+    height: 65px;
+}
