@@ -5,41 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대한민국 대통령실 클론코딩</title>
 
+
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
-
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'xgt2kpg',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
-
 
 </head>
 <body>
     <div id="wrap">
         <header id="header">
             <div class="header">
-
-            </div>
-        </header>
-        <section id="main">
-            <div class="main">
                 <h1 class="logo">
                     <a href="#;">
                         <img src="./img/logo.svg" alt="대통령실 로고">
                     </a>
                 </h1>
+                <div class="header_top">
+                    <div class="ht_link">
+                        <ul>
+                            <li><a href="#;">어린이</a></li>
+                            <li><a href="#;">EN</a></li>
+                            <li><a href="#;">글자크기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_bot">
+                    <nav id="nav">
+                        <ul class="floor1">
+                            <li>
+                                <a href="#;">대한민국 대통령</a>
+                                <ul class="floor2">
+                                    <h2>대한민국 대통령</h2>
+                                    <li><a href="#;">윤석열 대통령</a></li>
+                                    <li><a href="#;">공개일정</a></li>
+                                    <li><a href="#;">대통령의 말과 글</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#;">대통령실</a>
+                                <ul class="floor2">
+                                    <h2>대통령실</h2>
+                                    <li><a href="#;">용산시대</a></li>
+                                    <li><a href="#;">조직도</a></li>
+                                    <li><a href="#;">상징체계 소개</a></li>
+                                    <li><a href="#;">청와대, 국민 품으로</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#;">국정과제</a>
+                                <ul class="floor2">
+                                    <h2>국정과제</h2>
+                                    <li><a href="#;">국정비전</a></li>
+                                    <li><a href="#;">120대 국정과제</a></li>
+                                    <li><a href="#;">정부 업무보고</a></li>
+                                    <li><a href="#;">국정브리핑</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#;">대통령실 뉴스룸</a>
+                                <ul class="floor2">
+                                    <h2>대통령실 뉴스룸</h2>
+                                    <li><a href="#;">뉴스룸 홈</a></li>
+                                    <li><a href="#;">사실은 이렇습니다</a></li>
+                                    <li><a href="#;">사진뉴스</a></li>
+                                    <li><a href="#;">쇼츠</a></li>
+                                    <li><a href="#;">영상뉴스</a></li>
+                                    <li><a href="#;">브리핑</a></li>
+                                    <li><a href="#;">보도자료</a></li>
+                                    <li><a href="#;">카드뉴스</a></li>
+                                    <li><a href="#;">세계에서 빛난 대한민국</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#;">정보공개</a>
+                                <ul class="floor2">
+                                    <h2>정보공개</h2>
+                                    <li><a href="#;">정보공개제도</a></li>
+                                    <li><a href="#;">사전정보 공표목록</a></li>
+                                    <li><a href="#;">정보자료실</a></li>
+                                    <li><a href="#;">e-자료실</a></li>
+                                    <li><a href="#;">역대 대통령 기록관</a></li>
+                                    <li><a href="#;">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#;">국민제안</a>
+                            </li>
+                        </ul>
+                        <div class="megamenu_bg"></div>
+                    </nav>
+                    <div class="hb_menu">
+                        <div class="hb_search">
+                            <a href="#;" class="hbm"></a>
+                        </div>
+                        <div class="hb_allMenu">
+                            <button class="hbm"></button>
+                            <div class="main_allMenu">
+                                <div class="left"></div>
+                                <div class="right">
+                                    <div class="am_right_inner">
+                                        <div class="am_list">
+                                            <ul class="floor1">
+                                                <li>
+                                                    <h3>대한민국 대통령</h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="main">
+            <div class="main">
             </div>
         </section>
     </div>
+
 </body>
 </html>
