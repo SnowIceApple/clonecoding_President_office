@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -102,18 +104,117 @@
                     </nav>
                     <div class="hb_menu">
                         <div class="hb_search">
-                            <a href="#;" class="hbm"></a>
+                            <a href="#;" class="hbm">
+                                <span class="hidden_text">전체메뉴 열기</span>
+                            </a>
                         </div>
                         <div class="hb_allMenu">
                             <button class="hbm"></button>
                             <div class="main_allMenu">
-                                <div class="left"></div>
+                                <div class="am_utility">
+                                    <ul>
+                                        <li><a href="#;">어린이</a></li>
+                                        <li><a href="#;">EN</a></li>
+                                    </ul>
+                                    <div class="allMenu_close">
+                                        <button>
+                                            <span class="hidden_text">전체메뉴 닫기</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="am_left_top">
+                                        <div class="am_left_logo">
+                                            <img src="./img/logo.svg" alt="로고">
+                                        </div>
+                                        <div class="am_left_slogan">
+                                            <img src="./img/sitemap_slogan.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="right">
                                     <div class="am_right_inner">
                                         <div class="am_list">
                                             <ul class="floor1">
                                                 <li>
                                                     <h3>대한민국 대통령</h3>
+                                                    <ul class="floor2">
+                                                        <li>
+                                                            <h4><a href="#;">윤석열 대통령</a></h4>
+                                                            <ul class="floor3">
+                                                                <li><a href="#;">취임사</a></li>
+                                                                <li><a href="#;">프로필</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><h4><a href="#;">공개일정</a></h4></li>
+                                                        <li><h4><a href="#;">대통령의 말과 글</a></h4></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>대통령실</h3>
+                                                    <ul class="floor2">
+                                                        <li>
+                                                            <h4><a href="#;">용산시대</a></h4>
+                                                            <ul class="floor3">
+                                                                <li><a href="#;">열린 대통령실</a></li>
+                                                                <li><a href="#;">용산 역사와 소개</a></li>
+                                                                <li><a href="#;">용산어린이정원</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><h4><a href="#;">조직도</a></h4></li>
+                                                        <li><h4><a href="#;">상징체계 소개</a></h4></li>
+                                                        <li><h4><a href="#;">청와대, 국민 품으로</a></h4></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>국정과제</h3>
+                                                    <ul class="floor2">
+                                                        <li><h4><a href="#;">국정비전</a></h4></li>
+                                                        <li>
+                                                            <h4><a href="#;">120대 국정과제</a></h4>
+                                                            <ul class="floor3">
+                                                                <li><a href="#;">120대 국정과제</a></li>
+                                                                <li><a href="#;">국정과제 30대 핵심성과</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <h4><a href="#;">정부 업무보고</a></h4>
+                                                            <ul class="floor3">
+                                                                <li><a href="#;">2024</a></li>
+                                                                <li><a href="#;">2023</a></li>
+                                                                <li><a href="#;">2022</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><h4><a href="#;">정책브리핑</a></h4></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>대통령실 뉴스룸</h3>
+                                                    <ul class="floor2">
+                                                        <li><h4><a href="#;">뉴스룸 홈</a></h4></li>
+                                                        <li><h4><a href="#;">사실은 이렇습니다</a></h4></li>
+                                                        <li><h4><a href="#;">사진뉴스</a></h4></li>
+                                                        <li><h4><a href="#;">쇼츠</a></h4></li>
+                                                        <li><h4><a href="#;">영상뉴스</a></h4></li>
+                                                        <li><h4><a href="#;">브리핑</a></h4></li>
+                                                        <li><h4><a href="#;">보도자료</a></h4></li>
+                                                        <li><h4><a href="#;">카드뉴스</a></h4></li>
+                                                        <li><h4><a href="#;">세계에서 빛난 대한민국</a></h4></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>정보공개</h3>
+                                                    <ul class="floor2">
+                                                        <li><h4><a href="#;">정보공개제도</a></h4></li>
+                                                        <li><h4><a href="#;">사전정보 공표목록</a></h4></li>
+                                                        <li><h4><a href="#;">정보자료실</a></h4></li>
+                                                        <li><h4><a href="#;">e-자료실</a></h4></li>
+                                                        <li><h4><a href="#;">역대 대통령 기록관</a></h4></li>
+                                                        <li><h4><a href="#;">오시는 길</a></h4></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3><a href="#;">국민제안</a></h3>
                                                 </li>
                                             </ul>
                                         </div>
@@ -126,7 +227,63 @@
             </div>
         </header>
         <section id="main">
-            <div class="main">
+            <div class="container">
+                <div class="main">
+                    <div class="main_top slide_container">
+                        <div class="main_txt_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <h2>
+                                            "NATO 정상회의 기간에 한미동맹은 
+                                            <br>
+                                            명실상부한 핵 기반 동맹으로 확고하게 격상"
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <h2>
+                                            "첫 번째 북한이탈주민의 날이
+                                            <br>
+                                            '자유의 날', '통일의 날'을 앞당길 것"
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <h2>
+                                            "동맹, 우방국들의 손을 굳게 잡고 
+                                            <br>
+                                            인도태평양과 대서양의 평화와 번영 수호에 함께할 것"
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_bot">
+                        <div class="main_img_slide slide_container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <img src="./img/bhYR951CWucf6696101ca1d401.18820339.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <img src="./img/d3bFQwMq3SCA669375bf464850.14102070.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#;">
+                                        <img src="./img/vtYrPe9VvXlB6690790fb78311.15189526.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
