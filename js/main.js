@@ -12,7 +12,7 @@ $(document).ready(function(){
         $('#nav ul.floor2').stop().slideUp(300);
     });
 
-    $('.hbm').on('click', function(){
+    $('.hb_allMenu > button').on('click', function(){
         $('.main_allMenu').addClass('active');
         $('body').addClass('fixed');
     });
