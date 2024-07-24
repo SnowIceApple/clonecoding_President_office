@@ -84,12 +84,6 @@ $(document).ready(function(){
           el: '.swiper-scrollbar',
         },
 
-        // on: {
-        //     slideChange: function(){
-        //         var idx = this.realIndex;
-        //         $('.main_img_slide ul li').eq(idx).addClass('active').siblings().removeClass('active');
-        //     }
-        // }
       });
 
       swiper1.controller.control = swiper2;
@@ -155,4 +149,35 @@ $(document).ready(function(){
       },
 
     });
+    
+    const swiper5 = new Swiper('.main_introduce_top_slide', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      effect: 'fade',
+      fadeEffect: {
+          crossFade: true
+        },
+      duration: 500,
+
+  
+      navigation: {
+        nextEl: '.sbn3',
+        prevEl: '.sbp3',
+      },
+
+    });
+
+    const swiper6 = new Swiper('.main_introduce_bot_slide', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      duration: 500,
+
+    });
+
+    swiper5.controller.control = swiper6;
+    swiper6.controller.control = swiper5;
 });

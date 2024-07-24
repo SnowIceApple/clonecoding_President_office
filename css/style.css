@@ -579,7 +579,7 @@ section .container > div{
 
 .pd_top h2{
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     line-height: 1.3;
     font-weight: 700;
     color: var(--colorTxt1-);
@@ -849,6 +849,10 @@ span.date{
     display: inline;
 }
 
+.cate{
+    color: var(--colorTxt2-);
+}
+
 .border_bottom_txt{
     background-image: linear-gradient(var(--colorTxt1-), var(--colorTxt1-));
     background-size: 0 1px;
@@ -861,3 +865,342 @@ span.date{
     background-size: 100% 1px;
 }
 
+/* briefing */
+
+.briefing{
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.briefing_tit{
+    width: 620px;
+    color: var(--colorTxt1-);
+}
+
+.briefing_tit h2{
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.briefing_tit p{
+    line-height: 1.5;
+    margin: 25px 0 35px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.view_more_link a{
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-image: url('../img/btn_moreView.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color3-);
+}
+
+.briefing_list{
+    width: calc(100% - 620px);
+}
+
+.briefing_list ul li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.briefing_list ul li:first-child{
+    padding-top: 0px;
+}
+
+.brfl_txt{
+    width: calc(100% - 180px);
+}
+
+.brfl_txt *{
+    color: var(--colorTxt1-);
+}
+
+.briefing_list ul li .brfl_txt h3{
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.2;
+    font-size: 28px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.briefing_list ul li.top .brfl_txt h3{
+    font-size: 48px;
+    letter-spacing: -0.6px;
+    max-width: calc(100% - 80px);
+    margin-bottom: 20px;
+}
+
+.briefing_list ul li .brfl_txt p{
+    box-sizing: border-box;
+    padding-right: 200px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.briefing_list ul li.top .brfl_txt p{
+    font-size: 18px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.briefing_list ul li .brfl_txt h4{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 12px;
+    margin-top: 14px;
+}
+
+.briefing_list ul li .brfl_txt h4::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 13px;
+    background-color: var(--color3-);
+}
+
+.briefing_list ul li .brfl_txt a{
+    display: block;
+    padding-bottom: 10px;
+}
+
+.brfl_date{
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.brfl_date a{
+    height: max-content;
+    text-align: right;
+}
+
+.brfl_date a span{
+    color: var(--colorTxt2-);
+    display: inline-block;
+}
+
+.brfl_date a span:last-child{
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #c8c8c8;
+}
+
+.fact_tit{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.fact_tit .view_more_link{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fact_subTit{
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 3px solid #222;
+    margin-bottom: 27px;
+}
+
+.fact_subTit h3{
+    font-size: 20px;
+    color: var(--colorTxt1-);
+}
+
+.fact_list{
+    width: 100%;
+}
+
+.fact_list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fact_list ul li{
+    width: 25%;
+    box-sizing: border-box;
+    border-right: 1px solid #d5d5d5;
+    padding: 0 30px;
+}
+
+.fact_list ul li:first-child{
+    padding: 0 30px 0 0;
+}
+
+.fact_list ul li:last-child{
+    padding: 0 0 0 30px;
+    border-right: 0px;
+}
+
+
+.fact_list ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--colorTxt1-);
+}
+
+.fact_list ul li a h4{
+    font-size: 22px;
+    font-weight: 500;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fact_list ul li a .fl_main_tit{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 15px 0 20px 0;
+}
+
+.fact_list ul li a .fl_main_tit h3{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    display: inline;
+}
+
+.fact_list ul li a .date{
+    font-size: 16px;
+}
+
+/* main_introduce */
+
+.main_introduce_top{
+    margin-bottom: 150px;
+}
+
+.main_introduce_bot{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_introduce_bot_slide_control{
+    width: 810px;
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+
+.main_introduce_bot_slide_control .main_slide_control{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: max-content;
+    margin: 0;
+}
+
+.main_introduce_bot_slide_control .main_slide_control .msc_line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 150px);
+}
+
+.main_introduce_bot_slide{
+    width: calc(100% - 850px);
+    margin-right: 40px;
+}
+
+.main_introduce_bot_slide .swiper-slide a{
+    color: var(--colorTxt1-);
+}
+
+.main_introduce_bot_slide .swiper-slide a h2{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.main_introduce_bot_slide .swiper-slide a p{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+/* footer */
+
+#footer{
+    margin-top: 140px;
+    padding: 50px 0;
+    border-top: 1px solid #222;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_list{
+}
+
+.footer_list .floor1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_list .floor1 > li{
+    margin-right: 80px;
+}
+
+.footer_list .floor1 > li:last-child{
+    margin-right: 0px;
+}
+
+.footer_list .floor1 > li > a{
+    display: inline-block;
+    font-size: 18px;
+    color: var(--colorTxt1-);
+    margin-bottom: 25px;
+}
+
+.footer_list .floor2 > li{
+    margin-bottom: 13px;
+}
+
+.footer_list .floor2 > li > a{
+    color: #555;
+}
+
+.footer_address address{
+    color: var(--colorTxt1-);
+    font-size: 14px;
+    line-height: 1.5;
+}
