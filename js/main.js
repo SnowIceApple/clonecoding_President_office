@@ -188,18 +188,26 @@ $(window).on('scroll', function(){
     $('.go_up').removeClass('active');
   }
 
-  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-  var ftHeight = $('#footer').outerHeight();
-  var ftPos = ftHeight + 30;
+  let scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+  let ftHeight = $('#footer').outerHeight();
+  let ftPos = ftHeight + 30;
   // console.log(scrollBottom, ftHeight);
 
-  if(scrollBottom < ftHeight){
-    $('.go_up').addClass('pos_abs');
-    $('.go_up').css('bottom', ftPos + 'px');
+  function onScrollUp (){
+    
+    if($(window).outerWidth() < 1024){
+      return;
+    }
+    if(scrollBottom < ftHeight){
+      $('.go_up').addClass('pos_abs');
+      $('.go_up').css('bottom', ftPos + 'px');
+    }
+    else{
+      $('.go_up').removeClass('pos_abs');
+      $('.go_up').css('bottom', 30 + 'px');
+    }
   }
-  else{
-    $('.go_up').removeClass('pos_abs');
-    $('.go_up').css('bottom', 30 + 'px');
-  }
+
+  onScrollUp();
 
 });
