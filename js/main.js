@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
     AOS.init({
-      useClassNames: true,
-      initClassName: false,
-      animatedClassName: 'animated',
     });
 
     $('#nav').on('mouseenter focusin', function(){
