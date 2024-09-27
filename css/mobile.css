@@ -1,0 +1,20 @@
+@media all and (max-width: 1460px){
+    .briefing_tit{
+        width: 420px;
+    }
+
+    .briefing_list{
+        width: calc(100% - 420px);
+    }
+
+    .briefing_list ul li .brfl_txt p{
+        padding-right: 0px;
+    }
+}
+
+@media all and (max-width: 1040px){
+
+    .container{
+        padding: 0 20px;
+    }
+}

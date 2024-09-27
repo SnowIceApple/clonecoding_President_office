@@ -181,3 +181,28 @@ $(document).ready(function(){
     swiper5.controller.control = swiper6;
     swiper6.controller.control = swiper5;
 });
+
+$(window).on('scroll', function(){
+
+  if($(window).scrollTop() > 0){
+    $('.go_up').addClass('active');
+  }
+  else{
+    $('.go_up').removeClass('active');
+  }
+
+  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+  var ftHeight = $('#footer').outerHeight();
+  var ftPos = ftHeight + 30;
+  // console.log(scrollBottom, ftHeight);
+
+  if(scrollBottom < ftHeight){
+    $('.go_up').addClass('pos_abs');
+    $('.go_up').css('bottom', ftPos + 'px');
+  }
+  else{
+    $('.go_up').removeClass('pos_abs');
+    $('.go_up').css('bottom', 30 + 'px');
+  }
+
+});
