@@ -297,13 +297,17 @@
     .am_list > .floor1 > li{
         width: 100%;
         border: none;
-        padding: 13px 0 !important;
         margin: 0;
+        padding: 0 !important;
     }
 
     .am_list > .floor1 > li h3{
         margin-bottom: 0;
         font-weight: 600;
+    }
+
+    .am_list > .floor1 > li h3 a{
+        padding: 13px 0 !important;
     }
 
     .am_list > .floor1 > li.active h3 a{
