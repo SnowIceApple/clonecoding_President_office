@@ -261,10 +261,17 @@
 
 
     .allMenu_close{
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .allMenu_close button{
         filter: invert(1);
+        background-size: cover;
+        background-position: center;
     }
 
     .main_allMenu .left{
