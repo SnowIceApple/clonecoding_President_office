@@ -25,6 +25,35 @@ $(document).ready(function(){
         $('body').removeClass('fixed');
     });
 
+    var navFloorOpen = $('.am_list > .floor1 > li > h3 a');
+    
+    navFloorOpen.on('click', function(e){
+      var tg = $(this);
+      var tgList = tg.closest('li');
+      e.preventDefault();
+      if($(window).outerWidth() < 1040){
+        tgList.toggleClass('active');
+        tgList.siblings().removeClass('active');
+        if(tgList.hasClass('active')){
+          tg.parent().siblings('.floor2').stop().slideDown(200);
+          tgList.siblings().children('.floor2').stop().slideUp(200);
+        }
+        else{
+          tgList.children('.floor2').stop().slideUp(200);
+        }
+      }
+    });
+
+    $(window).on('resize', function(){
+      if($(window).outerWidth() > 1040){
+        $('.am_list > .floor1 > li').removeClass('active');
+        $('.am_list .floor2').show();
+      }
+      else{
+        $('.am_list .floor2').hide();
+      }
+    });
+
     const swiper1 = new Swiper('.main_txt_slide', {
         // Optional parameters
         direction: 'horizontal',
@@ -188,9 +217,9 @@ $(window).on('scroll', function(){
     $('.go_up').removeClass('active');
   }
 
-  let scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-  let ftHeight = $('#footer').outerHeight();
-  let ftPos = ftHeight + 30;
+  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+  var ftHeight = $('#footer').outerHeight();
+  var ftPos = ftHeight + 30;
   // console.log(scrollBottom, ftHeight);
 
   function onScrollUp (){

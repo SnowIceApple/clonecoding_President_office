@@ -278,7 +278,6 @@ body{
 .am_utility ul{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .am_utility ul li{
@@ -375,11 +374,15 @@ body{
 }
 
 .am_list > .floor1 > li h3{
-    color: var(--colorTxt1-);
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 40px;
     line-height: 1.4;
+}
+
+.am_list > .floor1 > li h3 a{
+    display: block;
+    color: var(--colorTxt1-);
 }
 
 .am_list .floor2{
@@ -419,9 +422,6 @@ section .container > div{
 }
 
 /* main */
-
-#main{
-}
 
 .main{
     padding-top: 140px;
@@ -1232,4 +1232,8 @@ span.date{
 
 .go_up.pos_abs{
     position: absolute;
+}
+
+.go_up a{
+    display: block;
 }
