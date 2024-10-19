@@ -67,6 +67,16 @@ $(document).ready(function(){
 
     $(window).on('resize', function(){
       if($(window).outerWidth() > 1040){
+        $('.footer_list > .floor1 > li').removeClass('active');
+        $('.footer_list .floor2').show();
+      }
+      else{
+        $('.footer_list .floor2').hide();
+      };
+    });
+
+    $(window).on('resize', function(){
+      if($(window).outerWidth() > 1040){
         $('.am_list > .floor1 > li').removeClass('active');
         $('.am_list .floor2').show();
       }
