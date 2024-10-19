@@ -251,6 +251,8 @@ $(document).ready(function(){
     swiper6.controller.control = swiper5;
 });
 
+
+
 $(window).on('scroll', function(){
 
   if($(window).scrollTop() > 0){
@@ -260,17 +262,18 @@ $(window).on('scroll', function(){
     $('.go_up').removeClass('active');
   }
 
-  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-  var ftHeight = $('#footer').outerHeight();
-  var ftPos = ftHeight + 30;
   // console.log(scrollBottom, ftHeight);
 
   function onScrollUp (){
+
+    var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+    var ftHeight = $('#footer').outerHeight();
+    var ftPos = ftHeight + 30;
     
     if($(window).outerWidth() < 1040){
       $('.go_up').css('bottom', 30 + 'px');
     }
-    if($(window).outerWidth() > 1040 && scrollBottom < ftHeight){
+    if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
       $('.go_up').addClass('pos_abs');
       $('.go_up').css('bottom', ftPos + 'px');
     }
@@ -282,4 +285,19 @@ $(window).on('scroll', function(){
 
   onScrollUp();
 
+});
+
+$('window').on('resize', function(){
+
+  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+  var ftHeight = $('#footer').outerHeight();
+  var ftPos = ftHeight + 30;
+
+  if($(window).outerWidth() < 1040){
+    $('.go_up').css('bottom', 30 + 'px');
+  }
+  if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
+    $('.go_up').addClass('pos_abs');
+    $('.go_up').css('bottom', ftPos + 'px');
+  }
 });
