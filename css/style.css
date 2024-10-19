@@ -667,6 +667,7 @@ section .container > div{
     position: absolute;
     left: 50%;
     top: 0;
+    transform: translateX(-50%);
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -1193,7 +1194,9 @@ span.date{
 }
 
 .footer_list .floor1 > li > a{
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    align-items: center;
     font-size: 18px;
     color: var(--colorTxt1-);
     margin-bottom: 25px;
