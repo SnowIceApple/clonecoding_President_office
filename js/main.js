@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    AOS.init({
-    });
+    AOS.init({});
 
     $('#nav').on('mouseenter focusin', function(){
         $(this).addClass('active');
@@ -217,7 +216,6 @@ $(document).ready(function(){
     $(window).on('resize', function(){
       windowWidth = $(window).outerWidth();
       activeMainInfoSlide();
-      console.log(windowWidth);
     });
 
     
