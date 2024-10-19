@@ -72,7 +72,7 @@ $(document).ready(function(){
       }
       else{
         $('.footer_list .floor2').hide();
-      };
+      }
     });
 
     $(window).on('resize', function(){
