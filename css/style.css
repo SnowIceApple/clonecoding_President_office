@@ -838,6 +838,14 @@ span.date{
     object-fit: cover;
 }
 
+.mif_more{
+    display: none;
+}
+
+.mif_more.active{
+    display: none;
+}
+
 .ss_tit{
     width: 100%;
     margin: 10px 0 6px 0;
@@ -1039,6 +1047,7 @@ span.date{
     border-bottom: 3px solid #222;
     margin-bottom: 27px;
 }
+
 
 .fact_subTit h3{
     font-size: 20px;

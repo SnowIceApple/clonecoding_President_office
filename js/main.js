@@ -218,6 +218,29 @@ $(document).ready(function(){
       activeMainInfoSlide();
     });
 
+    $('.mif_more button').on('click', function(){
+      $(this).parent().addClass('active');
+      $('.main_info_slide').addClass('mob_view');
+    });
+
+    $(window).on('resize', function(){
+      if($(window).outerWidth() > 768){
+        $('.main_info_slide').removeClass('mob_view');
+        $('.mif_more').removeClass('active');
+      }
+    });
+
+    $(window).on('resize', function(){
+      if($(window).outerWidth() <= 768){
+        var fctHeight = $('.fact_top').outerHeight();
+        var fcbHeight = $('.fact_bot').outerHeight();
+        $('.factCheck .view_more_link').css('top', (fctHeight + fcbHeight) + 20 + 'px');
+      }
+      else{
+        $('.factCheck .view_more_link').css('top', 50 + '%');
+      }
+    });
+
     
     const swiper5 = new Swiper('.main_introduce_top_slide', {
       // Optional parameters
@@ -249,55 +272,68 @@ $(document).ready(function(){
 
     swiper5.controller.control = swiper6;
     swiper6.controller.control = swiper5;
+
+    $(window).on('scroll', function(){
+
+      if($(window).scrollTop() > 0){
+        $('.go_up').addClass('active');
+      }
+      else{
+        $('.go_up').removeClass('active');
+      }
+    
+      // console.log(scrollBottom, ftHeight);
+    
+      function onScrollUp (){
+    
+        var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+        var ftHeight = $('#footer').outerHeight();
+        var ftPos = ftHeight + 30;
+        
+        if($(window).outerWidth() < 1040){
+          $('.go_up').css('bottom', 30 + 'px');
+        }
+        if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
+          $('.go_up').addClass('pos_abs');
+          $('.go_up').css('bottom', ftPos + 'px');
+        }
+        else{
+          $('.go_up').removeClass('pos_abs');
+          $('.go_up').css('bottom', 30 + 'px');
+        }
+      }
+    
+      onScrollUp();
+    
+    });
+    
+    $('window').on('resize', function(){
+    
+      var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
+      var ftHeight = $('#footer').outerHeight();
+      var ftPos = ftHeight + 30;
+    
+      if($(window).outerWidth() < 1040){
+        $('.go_up').css('bottom', 30 + 'px');
+      }
+      if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
+        $('.go_up').addClass('pos_abs');
+        $('.go_up').css('bottom', ftPos + 'px');
+      }
+    });
+
+
 });
 
-
-
-$(window).on('scroll', function(){
-
-  if($(window).scrollTop() > 0){
-    $('.go_up').addClass('active');
+$(window).on('load', function(){
+  if($(window).outerWidth() <= 768){
+    var fctHeight = $('.fact_top').outerHeight();
+    var fcbHeight = $('.fact_bot').outerHeight();
+    $('.factCheck .view_more_link').css('top', (fctHeight + fcbHeight) + 20 + 'px');
   }
   else{
-    $('.go_up').removeClass('active');
-  }
-
-  // console.log(scrollBottom, ftHeight);
-
-  function onScrollUp (){
-
-    var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-    var ftHeight = $('#footer').outerHeight();
-    var ftPos = ftHeight + 30;
-    
-    if($(window).outerWidth() < 1040){
-      $('.go_up').css('bottom', 30 + 'px');
-    }
-    if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
-      $('.go_up').addClass('pos_abs');
-      $('.go_up').css('bottom', ftPos + 'px');
-    }
-    else{
-      $('.go_up').removeClass('pos_abs');
-      $('.go_up').css('bottom', 30 + 'px');
-    }
-  }
-
-  onScrollUp();
-
-});
-
-$('window').on('resize', function(){
-
-  var scrollBottom = $('body').height() - $(window).height() - $(window).scrollTop();
-  var ftHeight = $('#footer').outerHeight();
-  var ftPos = ftHeight + 30;
-
-  if($(window).outerWidth() < 1040){
-    $('.go_up').css('bottom', 30 + 'px');
-  }
-  if($(window).outerWidth() >= 1040 && scrollBottom < ftHeight){
-    $('.go_up').addClass('pos_abs');
-    $('.go_up').css('bottom', ftPos + 'px');
+    $('.factCheck .view_more_link').css('top', 50 + '%');
   }
 });
+
+
