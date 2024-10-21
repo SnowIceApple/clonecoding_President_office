@@ -627,6 +627,11 @@
         display: block;
     }
 
+    .mis_tit{
+        width: 100%;
+        max-width: 100%;
+    }
+
     .main_info_slide .main_slide_control{
         display: none;
     }
@@ -682,6 +687,7 @@
 
     .pdb_cont_video_link ul li a{
         width: 240px;
+        max-width: 240px;
     }
 
     .main_info_slide_cont .swiper-wrapper{
@@ -773,9 +779,6 @@
     .main_introduce_bot_slide .swiper-slide a p br{
         display: none;
     }
-
-
-
 }
 
 @media all and (min-width: 768px){
@@ -784,4 +787,14 @@
         display: none;
     }
 
+}
+
+@media all and (max-width: 568px){
+    .pdb_cont_video_link ul li{
+        width: 100%;
+    }
+
+    .mis_tit{
+        line-height: 1.4;
+    }
 }
