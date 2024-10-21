@@ -586,6 +586,19 @@
 
 @media all and (max-width: 768px){
 
+    .main{
+        padding-top: 90px;
+    }
+    
+    .main_txt_slide .swiper-slide a h2{
+        font-size: 33px;
+        height: 80px;
+    }
+
+    .main_slide_util{
+        margin-top: 25px;
+    }
+
     /* .aos-animate {
         -o-transition-property: none !important;
         -moz-transition-property: none !important;
