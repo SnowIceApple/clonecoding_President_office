@@ -94,6 +94,10 @@ $(document).ready(function(){
             crossFade: true
           },
         duration: 500,
+        a11y: {
+          prevSlideMessage: '이전 슬라이드로 이동',
+          nextSlideMessage: '다음 슬라이드로 이동',
+      },
       
         pagination: {
           el: '.swiper-pagination',
@@ -120,6 +124,10 @@ $(document).ready(function(){
             crossFade: true
           },
         duration: 500,
+        a11y: {
+          prevSlideMessage: '이전 슬라이드로 이동',
+          nextSlideMessage: '다음 슬라이드로 이동',
+      },
       
         pagination: {
           el: '.swiper-pagination.pagi_type1',
@@ -166,6 +174,10 @@ $(document).ready(function(){
         centeredSlides: true,
         speed: 600,
         touchRatio: 0,
+        a11y: {
+          prevSlideMessage: '이전 차수로 이동',
+          nextSlideMessage: '다음 차수로 이동',
+      },
 
         navigation: {
           nextEl: '.pd_slide_button.next',
@@ -199,6 +211,10 @@ $(document).ready(function(){
           slidesPerView: 'auto',
           speed: 300,
           spaceBetween: 25,
+          a11y: {
+            prevSlideMessage: '이전 슬라이드로 이동',
+            nextSlideMessage: '다음 슬라이드로 이동',
+        },
     
           navigation: {
             nextEl: '.sbn2',
@@ -252,6 +268,10 @@ $(document).ready(function(){
           crossFade: true
         },
       duration: 500,
+      a11y: {
+        prevSlideMessage: '이전 슬라이드로 이동',
+        nextSlideMessage: '다음 슬라이드로 이동',
+    },
 
   
       navigation: {
