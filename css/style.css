@@ -40,6 +40,34 @@ body{
     --colorTxt2-: #777;
 }
 
+/* tab_to_move */
+
+.tab_to_move{
+
+}
+
+.tab_to_move a{
+    position: absolute;
+    left: 0;
+    top: -200px;
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+.tab_to_move a:active,
+.tab_to_move a:focus{
+    top: 0px;
+    outline: 1px solid #000;
+    border: 1px solid #fff;
+}
+
+
 /* header */
 
 #header{
