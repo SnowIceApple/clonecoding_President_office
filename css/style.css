@@ -327,6 +327,7 @@ body{
     width: 20px;
     height: 20px;
     background: url('../img/sitemap_close.svg');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
