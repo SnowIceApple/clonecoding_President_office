@@ -318,6 +318,9 @@ body{
 }
 
 .allMenu_close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 20px;
     margin-left: 6px;
