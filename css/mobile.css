@@ -187,8 +187,8 @@
     }
 
     .pd_slide{
-        width: 300px;
-        padding-left: 25px;
+        width: 185px;
+        padding: 0 3px 0 90px;
     }
 
     .pd_slide_box{
