@@ -157,9 +157,14 @@
         width: 100%;
     }
 
+    .main_img_slide{
+        border-radius: 25px 25px 0 0;
+    }
+
     .main_img_slide .swiper-slide a{
         height: 410px;
     }
+
 
     .pd_top{
         padding: 15px 0;
@@ -308,17 +313,17 @@
 
     .main_allMenu .right{
         width: 400px;
+        height: 100%;
+        overflow-y: scroll;
         flex: none;
         background: #fff;
         padding: 0 !important;
     }
 
     .am_right_inner{
-        height: auto;
-        max-height: 100%;
         box-sizing: border-box;
         padding: 30px 40px;
-        overflow: auto;
+        height: 100%;
     }
 
     .am_utility ul{
@@ -586,6 +591,14 @@
 
 @media all and (max-width: 768px){
 
+    .main_allMenu .right{
+        width: 100%;
+    }
+
+    .am_right_inner{
+        padding: 20px 22px;
+    }
+
     .main{
         padding-top: 90px;
     }
@@ -597,6 +610,15 @@
 
     .main_slide_util{
         margin-top: 25px;
+        padding-top: 0px;
+    }
+
+    .main_img_slide{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .main_img_slide .swiper-slide a{
+        height: 356px;
     }
 
     /* .aos-animate {
@@ -669,6 +691,10 @@
 
     }
 
+    section#public_debate{
+        margin-top: 25px;
+    }
+
     .pdb_cont_tit{
         margin-bottom: 25px;
     }
@@ -702,6 +728,7 @@
     .ss_tit{
         margin: 15px 0 6px 0;
     }
+
 
     #briefing,
     #factCheck{
